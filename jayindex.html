@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Required meta tag per assignment -->
+  <meta name="author" content="Jai Sainani">
+
+  <!-- Title MUST match the H1 exactly -->
+  <title>Sippable Start: Strawberry Banana Smoothie</title>
+
+  <!-- Creative but legible fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Josefin+Sans:wght@300;400;600&display=swap">
+  <!-- External stylesheet per assignment -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="site-header section">
+    <!-- 1) H1 with catchy page title (matches <title>) -->
+    <h1>Sippable Start: Strawberry Banana Smoothie</h1>
+
+    <!-- 2) H2 with the recipe name (begins with S for Sainani) -->
+    <h2>Strawberry Banana Smoothie</h2>
+
+    <!-- 3) Paragraph with citation of the recipe source -->
+    <p class="source">
+      Recipe by <em>Genevieve Yam</em> at
+      <a href="https://www.seriouseats.com/strawberry-banana-smoothie-recipe-7488483" target="_blank" rel="noopener">
+        Serious Eats
+      </a>.
+      Used here for academic purposes.
+    </p>
+  </header>
+
+  <!-- Page grid: at least two rows & two columns -->
+  <main class="page">
+
+    <!-- Row 1 / Col 1 : Media -->
+    <section class="section media" id="media">
+      <!-- 4) Image with alt + figcaption, height ~250px natural or styled via CSS -->
+      <figure>
+        <img
+          src="images/Strawberry_smoothie_2.jpg"
+          alt="Strawberry banana smoothie topped with whipped cream and a straw">
+        <figcaption>
+          “Strawberry smoothie 2.jpg” by Maffeth.opiana,
+          <a href="https://commons.wikimedia.org/wiki/File:Strawberry_smoothie_2.jpg" target="_blank" rel="noopener">Wikimedia Commons</a>,
+          licensed under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY‑SA 4.0</a>.
+          Resized to 250&nbsp;px height; no other changes.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Row 1 / Col 2 : Ingredients -->
+    <aside class="section ingredients" id="ingredients">
+      <!-- 5) Ingredients list heading -->
+      <h3>Ingredients</h3>
+      <!-- 6) Ingredients as an unordered list -->
+      <ul>
+        <li>1&nbsp;½ cups frozen strawberries (about 10 oz / 290 g)</li>
+        <li>1&nbsp;½ cups whole milk (or dairy‑free milk)</li>
+        <li>1 ripe banana</li>
+        <li>1 tablespoon strawberry jam</li>
+      </ul>
+
+      <!-- 7) Equipment list (commented out per assignment) -->
+      <!--
+      <h3>Equipment</h3>
+      <ul>
+        <li>Blender</li>
+      </ul>
+      -->
+    </aside>
+
+    <!-- Row 2 / Col 1 : Directions -->
+    <section class="section directions" id="directions">
+      <!-- 9) Directions heading -->
+      <h3>Directions</h3>
+      <!-- 10) Directions in an ordered list -->
+      <ol>
+        <li>
+          Combine frozen strawberries, milk, banana, and strawberry jam in a blender.
+          Pulse to break up the fruit, then blend on high until completely smooth
+          (about 1 minute). Pour and serve.
+        </li>
+      </ol>
+    </section>
+
+    <!-- Row 2 / Col 2 : Interactions (Rate + Conversion) -->
+    <section class="section interact" id="interact">
+      <!-- 4) Add Rate this Recipe -->
+      <h3 class="rate">Rate This Recipe</h3>
+      <form>
+        <fieldset>
+          <legend>What skill level is the recipe?</legend>
+          <label><input type="radio" id="easy" name="skill" value="easy"> Easy</label>
+          <label><input type="radio" id="med"  name="skill" value="intermediate"> Intermediate</label>
+          <label><input type="radio" id="hard" name="skill" value="hard"> Hard</label>
+        </fieldset>
+      </form>
+
+      <p aria-hidden="true">&nbsp;</p>
+
+      <!-- 3) Add Conversion (two inputs with =) -->
+      <h3>Conversion</h3>
+      <form class="conversion" aria-label="Unit conversion (tablespoons to cups)">
+        <label for="tblspn" class="sr-only">Tablespoons</label>
+        <input type="number" id="tblspn" name="tblspn" min="0" step="0.25" placeholder="Tablespoons">
+        <span aria-hidden="true" class="eq">=</span>
+        <label for="cups" class="sr-only">Cups</label>
+        <input type="number" id="cups" name="cups" min="0" step="0.01" placeholder="Cups">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 11) Horizontal rule + 12) right-justified statement -->
+  <footer class="site-footer section">
+    <hr>
+    <p class="text-right">This page created as academic activity only.</p>
+  </footer>
+</body>
+</html>

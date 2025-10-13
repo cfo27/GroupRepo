@@ -12,7 +12,7 @@ body {
 /* HEADER */
 header {
   text-align: left;
-  padding: 20px 10%; /* marge identique à la wrapper */
+  padding: 20px 10%;
   color: #663300;
 }
 
@@ -103,7 +103,7 @@ input[type="radio"] {
 footer {
   background-color: transparent;
   color: #663300;
-  padding: 15px 10%; /* même marge que header et wrapper */
+  padding: 15px 10%;
   font-size: 0.9em;
   display: flex;
   justify-content: space-between;
